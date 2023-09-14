@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: white;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    /* overflow: hidden; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 20px;
+}
+
+.menu-bar {
+    border-radius: 50%;
+
+}
+
+.menu-icon {
+    color: #c8c8c8;
+    fill: #c8c8c8;
+}
+
+.logo {
+    height: 20px;
+
+}
+
+
+
+.logo-container {
+    display: flex;
+}
+
+.logo-container div {
+    margin: 2px;
+}
+
+.profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+
+.header-sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-inner-part {
+    margin: 12px;
+}
+
+.search-bar-section {
+    width: 54%;
+}
+
+
+.search {
+    display: flex;
+    background-color: #272727;
+    margin-left: 0;
+    padding: 1px 30px;
+    width: 50px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+.mic {
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    background-color: #272727;
+    border-radius: 50%;
+    margin-left: 0;
+}
+
+.search-bar input {
+    margin-inline: -10px;
+    height: 40px;
+    padding: 12px;
+    background-color: transparent;
+    border-radius: 20px 0 0 20px;
+    margin-right: 0;
+    border-style: solid;
+    border-color: #2b2b2b;
+    border-width: 1px;
+}
+
+.search-bar-with-icon {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.search-bar-section input {
+    width: 100%;
+}
+
+.search-bar {
+    width: 100%;
+    margin-right: -10px;
+
+}
+
+/* https://www.w3schools.com/icons/google_icons_intro.asp */
+/* Main part */
+.main {
+    display: flex;
+    width: 100%;
+    gap: 2px;
+}
+
+.left-side {
+    width: 15%;
+    height: auto;
+    /* background-color: blueviolet; */
+}
+
+.inner-left {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0;
+}
+
+.left-side .horizontal-line {
+    background-color: #3b3b3b;
+    width: 90%;
+    height: 1px;
+    margin: 2px auto;
+}
+
+.inner-left-box {
+    display: flex;
+    border-radius: 8px;
+    margin: 0 8px;
+    padding: 4px 8px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inner-left-icons {
+    margin: 3px;
+}
+
+.inner-left #home {
+    background-color: #272727;
+}
+.inner-left #home:hover{
+    background-color: #272740;
+}
+
+.inner-left-box .inner-left-paragraph,
+.inner-left p {
+    display: flex;
+    flex-grow: 2;
+    text-align: left;
+    margin-left: 16px;
+}
+
+.svg-icon {
+    fill: red;
+}
+
+/* right */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    margin: -10px;
+    align-items: center;
+    min-width: 85%;
+    /* background-color: firebrick; */
+    /* height: auto; */
+}
+
+.right-header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    flex-wrap: wrap;
+}
+
+/* inner-left --> inner-left-box --> inner-left-icons */
+.right-side-header-button {
+    background-color: #272727;
+    margin: 4px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.right-side-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    margin-left: 60px;
+}
+
+.card {
+    width: 310px;
+    background-color: transparent;
+    border-radius: 8px;
+    margin: 12px 8px;
+    max-width: 460px;
+}
+
+#chips-default{
+    background-color: white;
+    color: black;
+}
+
+.right-side-header-button:hover, .menu-bar:hover:not(.search-icon), .inner-left-box:hover{
+    background-color: #3b3b3b;
+    cursor: pointer;
+}
+.card-image img{
+    width: 310px;
+    height: 170px;
+    border-radius: 8px;
+}
+
+.card-contents {
+    display: flex;
+    max-width: 320px;
+}
+.card-contents h2{
+    font-size: 16px;
+}
+.left-card{
+    margin: 13px;
+}
+.card-contents img{
+    width: 40px;
+    height: 40px;
+    text-align: left;
+    border-radius: 50%;
+    
+}
+.card-author, .card-views{
+    font-size: 14px;
+    color: #8d8d8d;
+    font-style: italic;
+}
+.right-card{
+    padding: 5px;
+    line-height: 1.5;
+}
+
+@media  screen and (max-width:1172px) {
+    .card{
+        width: 460px;
+        margin: auto;
+    }
+}
+@media  screen and (max-width:1198px) {
+    .card{
+        width: 460px;
+    }
+}
